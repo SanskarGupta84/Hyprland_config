@@ -1,0 +1,28 @@
+#NEW
+
+#LEFT SIDEBAR AND KEYBOARD
+nano ~/.config/caelestia/shell.json
+
+#MINIMUM 0.01
+sudo nano /etc/xdg/quickshell/caelestia/services/Brightness.qml
+
+#RIGHT HOVER
+sudo nano /etc/xdg/quickshell/caelestia/modules/osd/Content.qml
+
+
+
+#OLD
+
+#LEFT SIDEBAR
+sudo nano /etc/xdg/quickshell/caelestia/modules/bar/Bar.qml
+
+#KEYBOARD & MINIMUM 0.01
+sudo nano /etc/xdg/quickshell/caelestia/services/Brightness.qml
+
+#RIGHT HOVER
+sudo nano /etc/xdg/quickshell/caelestia/modules/osd/Content.qml
+
+
+#Cloudflare
+
+systemctl --user stop warp-taskbar
