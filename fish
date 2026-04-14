@@ -1,1 +1,0 @@
-/home/kiri/.local/share/caelestia/fish
