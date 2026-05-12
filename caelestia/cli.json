@@ -1,0 +1,91 @@
+{
+  "record": {
+    "extraArgs": []
+  },
+  "wallpaper": {
+    "postHook": "echo $WALLPAPER_PATH $SCHEME_NAME $SCHEME_FLAVOUR $SCHEME_MODE $SCHEME_VARIANT $SCHEME_COLOURS"
+  },
+  "theme": {
+    "enableTerm": true,
+    "enableHypr": true,
+    "enableDiscord": true,
+    "enableSpicetify": true,
+    "enablePandora": true,
+    "enableFuzzel": true,
+    "enableBtop": true,
+    "enableNvtop": true,
+    "enableHtop": true,
+    "enableGtk": true,
+    "enableQt": true,
+    "enableWarp": true,
+    "enableChromium": true,
+    "enableZed": true,
+    "enableCava": true,
+    "iconTheme": "Papirus-Dark",
+    "iconThemeLight": "Papirus-Light",
+    "iconThemeDark": "Papirus-Dark",
+    "postHook": "echo $SCHEME_NAME $SCHEME_FLAVOUR $SCHEME_MODE $SCHEME_VARIANT $SCHEME_COLOURS"
+  },
+  "toggles": {
+    "communication": {
+      "discord": {
+        "enable": true,
+        "match": [{ "class": "vesktop" }],
+        "command": ["discord"],
+        "move": true
+      },
+      "whatsapp": {
+        "enable": true,
+        "match": [{ "class": "ferdium" }],
+        "move": true
+      }
+    },
+    "music": {
+      "spotify": {
+        "enable": true,
+        "match": [
+          { "class": "Spotify" },
+          { "initialTitle": "Spotify" },
+          { "initialTitle": "Spotify Free" }
+        ],
+        "command": ["spicetify", "watch", "-s"],
+        "move": true
+      },
+      "feishin": {
+        "enable": true,
+        "match": [{ "class": "gapless" }],
+        "move": true
+      }
+    },
+    "sysmon": {
+      "btop": {
+        "enable": true,
+        "match": [
+          {
+            "class": "btop",
+            "title": "btop",
+            "workspace": { "name": "special:sysmon" }
+          }
+        ],
+        "command": [
+          "foot",
+          "-a",
+          "btop",
+          "-T",
+          "btop",
+          "fish",
+          "-C",
+          "exec btop"
+        ]
+      }
+    },
+    "todo": {
+      "todoist": {
+        "enable": true,
+        "match": [{ "class": "Todoist" }],
+        "command": ["todoist"],
+        "move": true
+      }
+    }
+  }
+}
