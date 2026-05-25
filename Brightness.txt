@@ -26,3 +26,7 @@ sudo nano /etc/xdg/quickshell/caelestia/modules/osd/Content.qml
 #Cloudflare
 
 systemctl --user stop warp-taskbar
+
+
+/etc/xdg/quickshell/caelestia/modules/dashboard/dash
+
